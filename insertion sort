@@ -1,0 +1,16 @@
+def insertionSort1(n, arr):
+    val = arr[-1]
+    for i in range(n):
+        
+        if val < arr[n-i-2] and i < n-1:
+            arr[n-i-1] = arr[n-i-2]
+            printArray(arr)
+        elif(val > arr[n-i-2]):
+            arr[n-i-1] = val
+            printArray(arr)
+            return
+        elif(i == n-1 and val < arr[n-i-1]):
+            arr[n-i-1] = val
+
+            printArray(arr)
+            return
