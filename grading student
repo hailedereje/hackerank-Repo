@@ -1,0 +1,21 @@
+
+def gradingStudents(grades):
+    for i in range(len(grades)):
+        grade = grades[i]
+        rem = grade % 10
+        print(grade)
+        normalValue = grade - rem
+        if (grade >= 38):
+
+            if(rem <= 5):
+                if ( 5 - rem < 3):
+                    grades[i] = normalValue + 5
+                    
+
+            else:
+                if(10 - rem < 3):
+                    grades[i] = normalValue + 10
+                   
+
+    return grades 
+   
